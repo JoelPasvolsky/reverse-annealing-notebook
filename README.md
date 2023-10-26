@@ -1,5 +1,5 @@
 [![Linux/Mac/Windows build status](
-  https://circleci.com/gh/dwave-examples/reverse-annealing-notebook.svg?style=svg)](
+  https://circleci.com/gh/dwave-examples/reverse-annealing-notebook.svg?style=shield)](
   https://circleci.com/gh/dwave-examples/reverse-annealing-notebook)
 
 # Reverse Anneal
@@ -27,27 +27,25 @@ The notebook has the following sections:
 
 ## Installation
 
-You can run this example
-[in the Leap IDE](https://ide.dwavesys.io/#https://github.com/dwave-examples/reverse-annealing-notebook).
+You can run this example without installation in cloud-based IDEs that support 
+the [Development Containers specification](https://containers.dev/supporting)
+(aka "devcontainers") such as [GitHub Codespaces](https://docs.github.com/codespaces).
 
-Alternatively, install requirements locally (ideally, in a virtual environment):
+For development environments that do not support ``devcontainers``, install 
+requirements:
 
     pip install -r requirements.txt
 
+If you are cloning the repo to your local system, working in a 
+[virtual environment](https://docs.python.org/3/library/venv.html) is 
+recommended.
+
 ## Usage
 
-To enable notebook extensions:
+The notebook can be opened by clicking on the 
+``01-reverse-annealing.ipynb`` file in Codespaces. 
 
-```bash
-jupyter contrib nbextension install --sys-prefix
-jupyter nbextension enable toc2/main
-jupyter nbextension enable exercise/main
-jupyter nbextension enable exercise2/main
-jupyter nbextension enable python-markdown/main
-
-```
-
-To run the notebook:
+To run a locally installed notebook:
 
 ```bash
 jupyter notebook
